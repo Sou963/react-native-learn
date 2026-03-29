@@ -7,7 +7,7 @@ import Class03 from "./components/class03";
 import Class04 from "./components/class04";
 import Class05 from "./components/class05";
 import Class06 from "./components/class06";
-import Navbar from "./components/navbar";
+import State from "./components/state";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -23,14 +23,14 @@ export class App extends Component {
       <NavigationContainer>
         {/* Navbar if needed */}
         {/* <Navbar /> */}
+        <State />
 
-        <Stack.Navigator screenOptions={{headerShown:false}}>
-
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
           {/* <Stack.Screen name="Navbar" component={Navbar} /> */}
 
           <Stack.Screen name="Home" component={Home} />
 
-          <Stack.Screen name="About" component={About} />
+          <Stack.Screen name="About" component={State} />
         </Stack.Navigator>
         {/* <Home /> */}
       </NavigationContainer>
