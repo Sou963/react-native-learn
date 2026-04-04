@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
-
 import FixedDimensionsBasics from "./components/class01";
 import Class02 from "./components/class02";
 import Class03 from "./components/class03";
@@ -8,6 +7,9 @@ import Class04 from "./components/class04";
 import Class05 from "./components/class05";
 import Class06 from "./components/class06";
 import State from "./components/state";
+import Styling from "./components/styling";
+import Flexbox from "./components/flexbox";
+import List from "./components/list";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -30,7 +32,7 @@ export class App extends Component {
 
           <Stack.Screen name="Home" component={Home} />
 
-          <Stack.Screen name="About" component={State} />
+          <Stack.Screen name="About" component={List} />
         </Stack.Navigator>
         {/* <Home /> */}
       </NavigationContainer>
